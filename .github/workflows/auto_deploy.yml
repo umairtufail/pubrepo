@@ -30,4 +30,4 @@ jobs:
       - name: Installing surge
         run: npm install -g surge"
       - name: deploying using surge
-        run: surge ./ firstsurgesample.surge.sh --token ${{ secrets.SURGE }}
+        run: surge ./ merciful-cent.surge.sh --token ${{ secrets.SURGE }}
