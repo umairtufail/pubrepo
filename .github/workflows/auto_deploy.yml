@@ -34,4 +34,4 @@ jobs:
         env:
           CI: ""
       - name: deploying using surge
-        run: surge ./https://firstsurgesample.surge.sh --token ${{ secrets.surge}}
+        run: surge ./https://firstsurgesample.surge.sh --token ${{ secrets.SURGE}}
