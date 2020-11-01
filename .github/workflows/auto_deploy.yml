@@ -6,7 +6,7 @@ name: first_startup
 # events but only for the main branch
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,14 +24,10 @@ jobs:
       - name: Installing Node
         uses: actions/setup-node@v2-beta
         with:
-          node-version-: 14      
-    
+          node-version-: 14
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
         run: surge ./https://firstsurgesample.surge.sh --token $ {{ secrets.surge}}
-        {{
-          echo Add other actions to build,
-          echo test, and deploy your project.
